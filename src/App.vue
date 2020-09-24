@@ -23,6 +23,11 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+html
+{
+  overflow-y: auto;
+}
+
 #app {
   /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
   font-family: 'Jost', sans-serif;

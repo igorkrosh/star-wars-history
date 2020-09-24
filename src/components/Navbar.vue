@@ -28,16 +28,17 @@
 
 <script>
 export default {
-    name: 'HelloWorld',
+    name: 'Navbar',
 }
 </script>
 
 <style>
-#app .navbar
+.navbar
 {
     background-color: #242424;
+    height: 65px;
 }
-#app .navbar-brand img
+.navbar-brand img
 {
     height: 50px;
     max-height: initial;
@@ -50,23 +51,23 @@ export default {
     margin-right: 15px;
 }
 
-#app .navbar-item
+.navbar-item
 {
     font-size: 18px;
     color: #ffffff;
 }
 
-#app .navbar-item:hover
+.navbar-item:hover
 {
     background-color: initial;
 }
 
-#app .navbar-item span
+.navbar-item span
 {
     position: relative;
 }
 
-#app .navbar-item span:after
+.navbar-item span:after
 {
     content: "";
     position: absolute;
@@ -79,14 +80,14 @@ export default {
     transition: 0.5s;
 }
 
-#app .navbar-item:hover span:after
+.navbar-item:hover span:after
 {
     width:100%;
 }
 
-#app .contacts-icons img
+.contacts-icons img
 {
-    height: 36px;
+    height: 32px;
     max-height: initial;
 }
 
