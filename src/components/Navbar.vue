@@ -35,7 +35,7 @@ export default {
 <style>
 .navbar
 {
-    background-color: #242424;
+    background: none;
     height: 65px;
 }
 .navbar-brand img
@@ -77,7 +77,8 @@ a.navbar-item:hover, a.navbar-item:focus
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: #64DD17;
+    box-shadow: 0px 0px 10px #64DD17;
     transition: 0.5s;
 }
 

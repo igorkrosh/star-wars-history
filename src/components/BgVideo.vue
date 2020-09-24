@@ -62,7 +62,7 @@ export default {
     top: 0;
     left: 0;
     background-color: #000000;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: 0;
 }
 
