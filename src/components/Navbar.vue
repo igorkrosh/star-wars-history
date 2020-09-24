@@ -1,12 +1,12 @@
 <template>
     <b-navbar wrapper-class="container">
         <template slot="brand">
-            <a class="logo">
+            <a class="logo" @click="RouterGoTo('Home')">
                 <img src="../assets/images/logo.svg" alt="Star Wars Logo">
             </a>
         </template>
         <template slot="start">
-            <b-navbar-item href="#">
+            <b-navbar-item href="#" @click="RouterGoTo('History')">
                 <span>История</span>
             </b-navbar-item>
         </template>
@@ -57,7 +57,7 @@ export default {
     color: #ffffff;
 }
 
-a.navbar-item:hover
+a.navbar-item:hover, a.navbar-item:focus
 {
     background-color: initial;
     color: #ffffff;
