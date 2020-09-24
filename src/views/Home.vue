@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BgVideo :source="this.bgVideoSource" :video="this.bgVideoPath"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import BgVideo from '@/components/BgVideo.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    BgVideo
+  },
+  data() {
+    return {
+      bgVideoSource: "https://youtu.be/X3sAnC0FpeU",
+      bgVideoPath: "homepagebg.webm",
+    }
   }
 }
 </script>
+
+<style>
+
+</style>
