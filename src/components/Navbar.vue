@@ -57,9 +57,10 @@ export default {
     color: #ffffff;
 }
 
-.navbar-item:hover
+a.navbar-item:hover
 {
     background-color: initial;
+    color: #ffffff;
 }
 
 .navbar-item span
