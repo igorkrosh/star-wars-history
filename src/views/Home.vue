@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style>
+/*
 .home:after
 {
   content: url('../assets/images/icons/shield_blue.svg');
@@ -59,7 +60,7 @@ export default {
   opacity: 0.1;
   transform: translateY(-50%);
 }
-
+*/
 .main-page-logo
 {
   margin-top: 35px;
@@ -90,15 +91,15 @@ export default {
   position: absolute;
   content: "";
   width: 250px;
-  height: 1px;
-  background-color: #64DD17;
-  box-shadow: 0px 0px 10px #64DD17;
+  height: 2px;
+  background-color: #cb2240;
+  box-shadow: 0px 0px 10px #cb2240;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
   opacity: 0.8;
 }
-
+/*
 .btn-start
 {
   padding: 5px 20px;
@@ -138,5 +139,27 @@ export default {
 .btn-start:hover
 {
 letter-spacing: 3px;
+}
+*/
+
+.btn-start
+{
+  border: none;
+background: #cb2240;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 35px;
+  font-weight: 400;
+  box-shadow: 0px 0px 10px #CB2040;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 25px;
+}
+
+.btn-start:hover
+{
+  box-shadow: 0px 0px 20px #CB2040;
+  transform: scale(1.1);
 }
 </style>
