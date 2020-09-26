@@ -45,4 +45,10 @@ html
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+body
+{
+  background-color: #000000;
+  height: 100vh;
+}
 </style>

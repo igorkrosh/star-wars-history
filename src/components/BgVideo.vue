@@ -50,7 +50,7 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -5;
+  z-index: 0;
 }
 
 .bg-video:after
