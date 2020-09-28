@@ -1,7 +1,7 @@
 <template>
     <b-navbar wrapper-class="container">
         <template slot="brand">
-            <a class="logo" @click="RouterGoTo('Home')">
+            <a class="logo" @click="RouterGoTo('Menu')">
                 <img src="../assets/images/logo.svg" alt="Star Wars Logo">
             </a>
         </template>
@@ -37,6 +37,9 @@ export default {
 {
     background: none;
     height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 .navbar-brand img
 {

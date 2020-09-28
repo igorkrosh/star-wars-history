@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <Navbar/>
+    <TransitionRoute/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/Navbar.vue';
+import TransitionRoute from '@/components/TransitionRoute.vue';
 
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+    TransitionRoute
+  },
 }
 </script>
 
@@ -50,5 +53,13 @@ body
 {
   background-color: #000000;
   height: 100vh;
+  overflow: hidden;
+}
+
+.bounce-enter-active {
+  animation: slideInRight .5s;
+}
+.bounce-leave-active {
+  animation: slideOutLeft .5s;
 }
 </style>

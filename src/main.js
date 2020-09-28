@@ -1,6 +1,8 @@
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 
+import 'animate.css/animate.min.css';
+
 import Vue from 'vue';
 import App from './App.vue';
 
