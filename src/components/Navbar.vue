@@ -33,6 +33,21 @@ export default {
             {
                 return "btn-menu"
             }
+        },
+        ROUTER_HISTORY() {
+            return this.$store.getters.ROUTER_HISTORY;
+        }
+    },
+    watch: {
+        ROUTER_HISTORY() {
+            if (this.$store.getters.ROUTER_HISTORY[0] === '/menu')
+            {
+                this.btnMenuActive = true;
+            }
+            else
+            {
+                this.btnMenuActive = false;
+            }
         }
     },
     methods: {
@@ -46,7 +61,7 @@ export default {
                 this.RouterGoTo('Menu');
             }
 
-            this.btnMenuActive = !this.btnMenuActive;
+            //this.btnMenuActive = !this.btnMenuActive;
         }
     }
 }
