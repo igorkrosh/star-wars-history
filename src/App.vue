@@ -54,6 +54,7 @@ body
   background-color: #000000;
   height: 100vh;
   overflow: hidden;
+  padding-top: 65px;
 }
 
 .bounce-enter-active {

@@ -29,6 +29,7 @@ export default {
             {
                 return;
             }
+            console.log(this.$store.getters.ROUTER_HISTORY)
             /*
                 Если TRANSITION_STATE == true => Переход между страницами начался. (Вызывается хук router.beforeEach())
                 Если TRANSITION_STATE == false => Переход между страницами закончен. (Вызывается хук router.afterEach())
@@ -70,7 +71,7 @@ export default {
 {
     position: fixed;
     z-index: 10;
-    background-color: #0D1B27;
+    background-color: #131419;
     top: 0;
     left: 0;
     width: 100vw;
