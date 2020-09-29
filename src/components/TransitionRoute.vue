@@ -29,7 +29,7 @@ export default {
             {
                 return;
             }
-            console.log(this.$store.getters.ROUTER_HISTORY)
+            //console.log(this.$store.getters.ROUTER_HISTORY)
             /*
                 Если TRANSITION_STATE == true => Переход между страницами начался. (Вызывается хук router.beforeEach())
                 Если TRANSITION_STATE == false => Переход между страницами закончен. (Вызывается хук router.afterEach())
@@ -51,6 +51,7 @@ export default {
             }
             else
             {
+                console.log('TRANSITION_STATE - false')
                 if (this.$store.getters.ROUTER_HISTORY[0] === this.$store.getters.ROUTER_HISTORY[2])
                 {
                     this.className = 'transition-route active animate__slideOutLeft';
@@ -79,7 +80,7 @@ export default {
     opacity: 0;
     z-index: -1;
     pointer-events: none;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .transition-route.active

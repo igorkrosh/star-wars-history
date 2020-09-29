@@ -39,7 +39,7 @@ router.beforeEach((to, from, next) => {
   store.dispatch('SET_TRANSITION_STATE', true);
   store.dispatch('HISTORY_ADD_ROUTE', to.path);
   
-  setTimeout(next, 1000);
+  setTimeout(next, 600);
 });
 
 router.afterEach(() => {
