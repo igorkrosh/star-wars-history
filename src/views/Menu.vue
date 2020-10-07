@@ -150,8 +150,11 @@ export default {
 <style>
 .menu
 {
-    height: 100%;
-    border-top: 2px solid #272932;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 .menu-item

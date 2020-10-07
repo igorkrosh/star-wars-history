@@ -9,7 +9,7 @@
         <span>Star Wars: История</span>
         Познай историю Звездных Войн с нами!
       </div>
-      <button class="btn-start"  @click="RouterGoTo('History')">Начать</button>
+      <button class="btn-start"  @click="RouterGoTo('History')"><span>Начать</span></button>
     </div>
   </div>
 </template>
@@ -33,34 +33,7 @@ export default {
 </script>
 
 <style>
-/*
-.home:after
-{
-  content: url('../assets/images/icons/shield_blue.svg');
-  position: fixed;
-  height: auto;
-  width: 900px;
-  top: 50%;
-  left: -550px;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.1;
-  transform: translateY(-50%);
-}
 
-.home:before
-{
-  content: url('../assets/images/icons/shield_red.svg');
-  position: fixed;
-  width: 900px;
-  top: 50%;
-  right: -550px;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.1;
-  transform: translateY(-50%);
-}
-*/
 .main-page-logo
 {
   margin-top: 35px;
@@ -92,74 +65,57 @@ export default {
   content: "";
   width: 250px;
   height: 2px;
-  background-color: #cb2240;
-  box-shadow: 0px 0px 10px #cb2240;
+  background-color: #E03232;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
   opacity: 0.8;
 }
-/*
+
 .btn-start
 {
-  padding: 5px 20px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 28px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Jost', sans-serif;   
+  text-align: left;
   position: relative;
-  margin-top: 25px;
   transition: 0.5s;
-  background: none;
+  background: rgba(224, 50, 50, 1);
+  margin-top: 25px;
   border: none;
-  cursor: pointer;
+  width: 200px;
+  height: 55px;
 }
 
 .btn-start:before
 {
+    content: url("../assets/images/icons/btn_arrow.svg");
+    position: absolute;
+    width: 8px;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.btn-start span
+{
   position: absolute;
-  content: "";
-  height: 3px;
-  width: 100%;
-  background: #64DD17;
-  box-shadow: 0px 0px 10px #64DD17;
-  bottom: 0;
+  top: 17px;
+  left: 40px;
+  transition: 0.5s;
+}
+
+.btn-start:hover span
+{
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 3px;
-  
 }
 
 .btn-start:hover:before
 {
-  color: #ffffff;
-  
-}
-
-.btn-start:hover
-{
-letter-spacing: 3px;
-}
-*/
-
-.btn-start
-{
-  border: none;
-background: #cb2240;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 10px 35px;
-  font-weight: 400;
-  box-shadow: 0px 0px 10px #CB2040;
-  cursor: pointer;
-  transition: 0.5s;
-  margin-top: 25px;
-}
-
-.btn-start:hover
-{
-  box-shadow: 0px 0px 20px #CB2040;
-  transform: scale(1.1);
+  opacity: 0;
 }
 </style>
