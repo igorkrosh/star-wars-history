@@ -34,6 +34,7 @@ html
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
+  height: 100%;
 }
 
 #nav {
@@ -51,7 +52,7 @@ html
 
 body
 {
-  background-color: #000000;
+  background-color: #131419;
   height: 100vh;
   overflow: hidden;
   padding-top: 65px;
