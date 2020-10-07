@@ -58,10 +58,9 @@ body
   padding-top: 65px;
 }
 
-.bounce-enter-active {
-  animation: slideInRight .5s;
+button
+{
+  cursor: pointer;
 }
-.bounce-leave-active {
-  animation: slideOutLeft .5s;
-}
+
 </style>
